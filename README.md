@@ -32,7 +32,7 @@ Copy or move env.sh.example to env.sh and edit it based on your environment.
 ```
 # /directory/to/install/zbx_lxc/zbx_lxc.sh
 ```
-Check if everything goes well such as "lxc-ls", "lxc-cgroup" and "zabbix_sender" are in PATH.
+Check if "lxc-ls", "lxc-cgroup" and "zabbix_sender" are in PATH and if you have permission to run them.
 
 ## Crontab
 ```
