@@ -17,7 +17,7 @@ You can see /directory/to/install/zbx_lxc.
 ## Import a template and link it to a LXC running host
 In the directory you download, there is "zbx_lxc_templates.xml." 
 Import it to your Zabbix server and link it to your LXC running host.
-If you use swap in the host and your containers, you have to enable item prototypes: \*.memsw.\*.
+If you use swap in the host and your containers, you have to enable item prototypes related to swap: \*.memsw.\*.
 
 ## Copy env.sh.example to env.sh and edit it
 ```
@@ -26,7 +26,7 @@ zserver="zabbix.server.com" # Zabbix server or proxy
 zport="10051"               # Zabbix server/proxy port number
 ```
 Copy or move env.sh.example to env.sh and edit it based on your environment. 
-"zsender" must be the same as the name you set up for the LXC running host in your Zabbix server.
+"zsender" must be the name you set up for the LXC running host in your Zabbix server.
 
 ## Test
 ```
