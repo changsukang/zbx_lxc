@@ -34,8 +34,8 @@ Copy or move env.sh.example to env.sh and edit it based on your environment.
 ```
 Check if "lxc-ls", "lxc-cgroup" and "zabbix_sender" are in PATH and if you have permission to run them.
 
-## Crontab
+## Run every minute
 ```
-* * * * * /directory/to/install/zbx_lxc/zbx_lxc.sh > /directory/to/install/zbx_lxc/zbx_lxc.log 2>&1
+# /directory/to/install/zbx_lxc/run.sh
 ```
-Let the script send information every one minute with cron.
+The script loops every one minute to run "zbx_lxc.sh" described above.
